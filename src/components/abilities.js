@@ -8,7 +8,6 @@ function Abilities() {
     { title: "ANGULAR", value: 50 },
     { title: "NEXT.JS", value: 65 },
     { title: "NODE.JS", value: 40, additionalText: "( Micro Service )" },
-    { title: "REACT NATIVE", value: 40 }
   ];
 
   return (
@@ -71,30 +70,7 @@ function Abilities() {
               ))}
             </div>
           </div>
-          <div>
-            <h2 className="title title--h3">Mobil</h2>
-            <div className="box box__border">
-              {abilities
-                .filter(ability => ability.title === "REACT NATIVE")
-                .map((ability, index) => (
-                  <div className="progress" key={index}>
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      style={{ width: `${ability.value}%`, backgroundColor: "#007bff" }}
-                      aria-valuenow={ability.value}
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div className="progress-text">
-                        <span>{ability.title}</span>
-                        <span>{ability.value}%</span>
-                      </div>
-                    </div>
-                  </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
