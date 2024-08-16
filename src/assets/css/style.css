@@ -1157,9 +1157,13 @@ button:focus {
 @media only screen and (max-width: 580px) {
   .nav__item {
     height: auto;
-    width: calc(20% - 0rem);
+    width: calc(20% - 0rem); /* Genişlik hesaplaması */
+    margin: 0 0.25rem; /* Sağ ve sol margin */
+    padding: 0.5rem; /* Üst, alt, sağ ve sol padding */
+    justify-content: space-between; /* İçerik arasındaki boşlukları eşit dağıtır */
   }
 }
+
 .nav__item a {
   background-color: #F7F9FA;
   border-radius: 1.25rem;
@@ -2355,7 +2359,7 @@ button:focus {
 .progress {
   background-color: #F7F9FA;
   border-radius: 1rem;
-  height: 1.5rem;
+  height: 22px!important;
   margin-bottom: 1.5rem;
   overflow: inherit;
   position: relative;
@@ -2375,6 +2379,7 @@ button:focus {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
+
   width: 0%;
   z-index: 1;
 }
