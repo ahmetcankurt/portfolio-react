@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkahmet_portfolio_react=self.webpackChunkahmet_portfolio_react||[]).push([[854],{854:(n,e,t)=>{t.r(e),t.d(e,{default:()=>c});var i=t(43),a=t(579);const c=function(){return(0,i.useEffect)((()=>{const n=document.getElementById("animationRandom");let e,t="";e=window.innerWidth<=768?100:120;for(let i=0;i<e;i++)t+='\n            <div class="circle-container">\n                <div class="circle"></div>\n            </div>\n        ';n.innerHTML=t}),[]),(0,a.jsx)("div",{id:"animationRandom"})}}}]);
-//# sourceMappingURL=854.a031cfb9.chunk.js.map
