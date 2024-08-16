@@ -28,7 +28,7 @@ function Sidebar() {
                 className={activeSection === item.id ? 'active' : ''}
                 onClick={() => handleNavClick(item.id)}
               >
-                <FontAwesomeIcon icon={item.icon} size="2x" /> {item.text}
+                <FontAwesomeIcon icon={item.icon} size="2x" className="my-1" /> {item.text}
               </a>
             </li>
           ))}
