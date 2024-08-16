@@ -1,9 +1,9 @@
-import { useRef, useEffect, useState, memo } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import * as tf from '@tensorflow/tfjs';
 import Drawing from './Drawing';
 import Output from './Output';
 
-const classifierUrl = `${window.location.protocol}//${window.location.host}/classifiers/model.json`;
+const classifierUrl = `/portfolio-react/classifiers/model.json`;
 
 const loadModel = async () => {
   try {
@@ -77,8 +77,8 @@ const App = () => {
   };
 
   return (
-    <div  style={{ textAlign: 'center'  ,justifyContent:'center' ,alignItems:'center' }}>
-      <div  style={{ textAlign: 'center' ,display:'flex' ,justifyContent:'center' ,alignItems:'center' }}>
+    <div  style={{ textAlign: 'center'  }}>
+      <div  >
         <Drawing
           strokes={strokes}
           isDrawing={isDrawing}
@@ -90,10 +90,10 @@ const App = () => {
       </div>
       <div>
         <Output prediction={prediction} probability={predictionProbability} />
-        <button type="button" className='btn btn-success mt-0 px-5'   onClick={clearCanvas}>Clear</button>
+        <button type="button" className='btn btn-success mt-0 px-5' style={{fontSize:30}}  onClick={clearCanvas}>Clear</button>
       </div>
     </div>
   );
 };
 
-export default memo(App);
+export default App;

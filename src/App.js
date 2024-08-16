@@ -9,7 +9,8 @@ const About = lazy(() => import("./components/about"));
 const Resume = lazy(() => import("./components/resume"));
 const Abilities = lazy(() => import("./components/abilities"));
 const Projects = lazy(() => import("./components/projects"));
-const AnimationRandom = lazy(() => import("./components/animations"));
+
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,7 @@ function App() {
       <Suspense fallback={loading && <PlaceHolder />}>
         <main className="main">
           <HeaderImage />
-        <AnimationRandom />
+        {/* <AnimationRandom /> */}
         <div className="container gutter-top">
             <Header />
             <div className="row sticky-parent">

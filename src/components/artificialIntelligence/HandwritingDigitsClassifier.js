@@ -25,8 +25,6 @@ export default class HandwritingDigitsClassifier {
       const output = this.model.predict(dataTensor);
       const axis = 1;
       const predictions = Array.from(output.argMax(axis).dataSync());
-      console.log("Model output:", output);
-      console.log("Predictions:", predictions);
       return predictions[0]; // En yüksek olasılığa sahip sınıfı döndür
     });
   }

@@ -5,6 +5,7 @@
   border: 5px solid dodgerblue;
   background-color: black;
   touch-action: none;
+  border-radius: 10px;
 }
 
 .canvas:hover {
