@@ -86,7 +86,6 @@ function Projects() {
             onClick={() => openModal(project)}
           >
             <div className="news-item__image-wrap overlay overlay--45">
-              <div className="news-item__date">{project.date}</div>
               <img
                 className="cover lazyload"
                 src={project.image}
