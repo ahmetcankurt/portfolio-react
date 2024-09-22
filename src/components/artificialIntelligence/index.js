@@ -90,7 +90,7 @@ const App = () => {
       </div>
       <div>
         <Output prediction={prediction} probability={predictionProbability} />
-        <button type="button" className='btn btn-success mt-0 px-5' style={{fontSize:30}}  onClick={clearCanvas}>Clear</button>
+        <button type="button" className='btn btn-primary  mt-0 px-5' style={{fontSize:30}}  onClick={clearCanvas}>Clear</button>
       </div>
     </div>
   );

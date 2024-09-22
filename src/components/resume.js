@@ -14,7 +14,7 @@ function Resume() {
       <div className="row">
         <div className="col-lg-6">
           <h2 className="title title--h3">
-            <img
+          <img
               className="title-icon"
               src={Education}
               alt="Education"

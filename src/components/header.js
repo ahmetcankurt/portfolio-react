@@ -12,8 +12,8 @@ const socialLinks = [
 
 const contactInfo = [
   { label: "E-mail", value: "myahmetcankurt@gmail.com", href: "mailto:myahmetcankurt@gmail.com" },
-  { label: "Telefon", value: "0532 333 ** **" },
-  { label: "DOĞUM TARİHİ", value: "1999" },
+  // { label: "Telefon", value: "0532 333 ** **" },
+  { label: "DOĞUM TARİHİ", value: "Kasım 1999" },
   { label: "Adres", value: "Antalya, TR" }
 ];
 
