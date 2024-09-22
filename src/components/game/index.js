@@ -212,7 +212,7 @@ function Game() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (gameOver) return;
-
+  
       const containerWidth = containerRef.current.clientWidth;
       const boxWidth = boxRef.current
         ? boxRef.current.clientWidth
@@ -220,16 +220,36 @@ function Game() {
       const margin = 20;
       const maxX = containerWidth - boxWidth - margin;
       const newBoxX =
-        e.clientX -
-        containerRef.current.getBoundingClientRect().left -
-        boxWidth / 2;
-
+        e.clientX - containerRef.current.getBoundingClientRect().left - boxWidth / 2;
+  
       setBoxX(Math.max(margin, Math.min(maxX, newBoxX)));
     };
-
+  
+    const handleTouchMove = (e) => {
+      if (gameOver) return;
+  
+      const touch = e.touches[0];
+      const containerWidth = containerRef.current.clientWidth;
+      const boxWidth = boxRef.current
+        ? boxRef.current.clientWidth
+        : boxSizewWidth;
+      const margin = 20;
+      const maxX = containerWidth - boxWidth - margin;
+      const newBoxX =
+        touch.clientX - containerRef.current.getBoundingClientRect().left - boxWidth / 2;
+  
+      setBoxX(Math.max(margin, Math.min(maxX, newBoxX)));
+    };
+  
     window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
+  
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
   }, [gameOver]);
+  
 
   const resetGame = () => {
     setBoxX(window.innerWidth / 2 - 50);
