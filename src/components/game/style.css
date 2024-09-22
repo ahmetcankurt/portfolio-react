@@ -108,4 +108,11 @@
     color: #333;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    .box_ {
+      margin-bottom: 30px;
+    }
+    
+  }
 }

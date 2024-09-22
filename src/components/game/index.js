@@ -29,9 +29,9 @@ function Game() {
   const addObstacles = () => {
     const containerWidth = containerRef.current.clientWidth;
     const containerHeight = containerRef.current.clientHeight;
-    const obstacleSize = containerWidth < 600 ? 7 : 9;
-    const obstacleRows = containerWidth < 600 ? 6 : 6;
-    const obstacleCols = containerWidth < 600 ? 10 : 18;
+    const obstacleSize = containerWidth < 600 ? 6 : 9;
+    const obstacleRows = containerWidth < 600 ? 7 : 6;
+    const obstacleCols = containerWidth < 600 ? 8 : 18;
     const obstacleSpacingX = containerWidth / obstacleCols;
     const obstacleSpacingY = containerHeight / (obstacleRows + 2);
 
