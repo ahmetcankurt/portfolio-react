@@ -294,7 +294,6 @@ function Game() {
         <div className="score">
           <span>Skor: {score}</span>
         </div>
-        <span className="max-score">Best Skor : {highScore}</span>
         <div
           className="box_"
           ref={boxRef}
@@ -307,6 +306,7 @@ function Game() {
         />
         <div className={`game-over ${gameOver ? "visible" : ""}`}>
           <span className="modal-score">Skorunuz: {score}</span>
+        <span className="max-score">Best Skor : {highScore}</span>
           <div>
             <button onClick={resetGame} className="restart-button">
               Tekrar Başlat

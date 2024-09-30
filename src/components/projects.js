@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Link bileşenini içe aktar
 import TrawelinImage from "../assets/image/Trawelin.jpeg";
 import RotaImage from "../assets/image/rotaImage.jpeg";
 import ScreenshotImage from "../assets/image/screenshot.png";
 import MNISTImage from "../assets/image/MNIST.png";
+import CoinSweeperImage from "../assets/image/coin-sweper-logo.png";
 
 const projects = [
   {
@@ -44,12 +44,14 @@ const projects = [
   },
   {
     date: "Coin Sweeper",
-    image: "",
-    alt: "",
-    title: "",
-    description: "",
-    path: "/coin-sweeper", // Yönlendirme yapacak yol
-  },
+    image: CoinSweeperImage,
+    alt: "Coin Sweeper Logo",
+    title: "Coin Sweeper",
+    description:
+      "Coin Sweeper, yukarıdan düşen paraları kutu ile topladığınız eğlenceli bir oyundur. Matter.js kullanılarak gerçekçi fizik hesaplamaları ile zorluk seviyeleri ayarlanmıştır. Hedefiniz, en yüksek skoru elde etmek için düşen paraları toplamak. Daha fazla bilgi ve oyuna erişmek için tıklayınız!",
+    path: "https://ahmetcankurt.github.io/coin-sweeper/", // URL olarak belirtildi
+  }
+  
 ];
 
 function Projects() {
@@ -74,9 +76,17 @@ function Projects() {
             data-aos={project.aos}
             data-aos-duration="1500"
           >
-            <Link
-              to={project.path} // Yönlendirme için Link bileşeni
-              style={{ textDecoration: "none", color: "inherit" }} // Varsayılan stilleri kaldırmak için
+            <div
+              onClick={() => {
+                if (project.path.startsWith("http")) {
+                  window.open(project.path, "_blank"); // URL'ye yeni sekmede git
+                }
+              }}
+              style={{
+                cursor: "pointer",
+                textDecoration: "none",
+                color: "inherit",
+              }} // İmleci değiştir ve varsayılan stilleri kaldır
             >
               <div className="news-item__image-wrap overlay overlay--45">
                 <img
@@ -89,7 +99,7 @@ function Projects() {
                 <h2 className="title title--h4">{project.title}</h2>
                 <p>{project.description}</p>
               </div>
-            </Link>
+            </div>
           </article>
         ))}
       </div>
