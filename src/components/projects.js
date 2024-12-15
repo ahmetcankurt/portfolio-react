@@ -40,7 +40,7 @@ const projects = [
     title: "React JS ile El Yazısı Tanıma",
     description:
       "React JS kullanarak el yazısını tanıyan bir uygulama. Bir sayı (0-9) çizin ve modelin tahminini görün!",
-    path: "/yapay-zeka", // Yönlendirme yapacak yol
+    path: "https://ahmetcankurt.github.io/draw-predict/", // Yönlendirme yapacak yol
   },
   {
     date: "Coin Sweeper",
@@ -48,7 +48,7 @@ const projects = [
     alt: "Coin Sweeper Logo",
     title: "Coin Sweeper",
     description:
-      "Coin Sweeper, yukarıdan düşen paraları kutu ile topladığınız eğlenceli bir oyundur. Matter.js kullanılarak gerçekçi fizik hesaplamaları ile zorluk seviyeleri ayarlanmıştır. Hedefiniz, en yüksek skoru elde etmek için düşen paraları toplamak. Daha fazla bilgi ve oyuna erişmek için tıklayınız!",
+      "Coin Sweeper, yukarıdan düşen paraları kutu ile topladığınız eğlenceli bir oyundur. Matter.js kullanılarak gerçekçi fizik hesaplamaları ile zorluk seviyeleri ayarlanmıştır. Hedefiniz, en yüksek skoru elde etmek için düşen paraları toplamak. Daha fazla bilgi ve oyuna erişmek için tıklayınız! Şimdilik 15.6 inc bilgisayar oyunu olarak tasarlanmıştır",
     path: "https://ahmetcankurt.github.io/coin-sweeper/", // URL olarak belirtildi
   }
   
