@@ -7,11 +7,16 @@ function Abilities() {
     { title: "REACT", value: 90 },
     { title: "ANGULAR", value: 50 },
     { title: "NEXT.JS", value: 65 },
-    { title: "NODE.JS", value: 40, additionalText: "( Micro Service )" },
+    { title: "NODE.JS ( Express API )", value: 70 },
   ];
 
   return (
-    <div id="yetenekler-tab-id" className="box box-content mb-4" data-aos="fade-right" data-aos-duration="2500">
+    <div
+      id="yetenekler-tab-id"
+      className="box box-content mb-4"
+      data-aos="fade-right"
+      data-aos-duration="2500"
+    >
       <div className="pb-2">
         <h1 className="title title--h1 first-title title__separate">
           Yetenekler
@@ -27,7 +32,10 @@ function Abilities() {
                 <div
                   className="progress-bar"
                   role="progressbar"
-                  style={{ width: `${ability.value}%`, backgroundColor: "#007bff" }}
+                  style={{
+                    width: `${ability.value}%`,
+                    backgroundColor: "#007bff",
+                  }}
                   aria-valuenow={ability.value}
                   aria-valuemin="0"
                   aria-valuemax="100"
@@ -46,13 +54,18 @@ function Abilities() {
             <h2 className="title title--h3">Back-End</h2>
             <div className="box box__border">
               {abilities
-                .filter(ability => ability.title === "NODE.JS")
+                .filter(
+                  (ability) => ability.title === "NODE.JS ( Express API )"
+                )
                 .map((ability, index) => (
                   <div className="progress" key={index}>
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: `${ability.value}%`, backgroundColor: "#007bff" }}
+                      style={{
+                        width: `${ability.value}%`,
+                        backgroundColor: "#007bff",
+                      }}
                       aria-valuenow={ability.value}
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -67,10 +80,9 @@ function Abilities() {
                       <span>{ability.additionalText}</span>
                     </div>
                   </div>
-              ))}
+                ))}
             </div>
           </div>
-          
         </div>
       </div>
     </div>

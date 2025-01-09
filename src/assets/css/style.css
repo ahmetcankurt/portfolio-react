@@ -2493,3 +2493,12 @@ button:focus {
   /* Diğer stil ayarları */
   z-index: 100; /* Üzerinde başka bir öğe varsa, üstte görünmesini sağlar */
 }
+
+
+.sticky-sidebar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky!important;
+  top: 20px; /* Üstten ne kadar uzaklıkta sabit kalacak */
+  /* Diğer stil ayarları */
+  z-index: 100; /* Üzerinde başka bir öğe varsa, üstte görünmesini sağlar */
+}

@@ -9,6 +9,7 @@ const About = lazy(() => import("./components/about"));
 const Resume = lazy(() => import("./components/resume"));
 const Abilities = lazy(() => import("./components/abilities"));
 const Projects = lazy(() => import("./components/projects"));
+const RandomCodeParticles = lazy(() => import("./components/tsparticles"));
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <Suspense fallback={loading && <PlaceHolder />}>
-        <main className="main">
+      <main className="main">
           <HeaderImage />
           <div className="container gutter-top">
             <Header />

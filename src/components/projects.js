@@ -4,6 +4,7 @@ import RotaImage from "../assets/image/rotaImage.jpeg";
 import ScreenshotImage from "../assets/image/screenshot.png";
 import MNISTImage from "../assets/image/MNIST.png";
 import CoinSweeperImage from "../assets/image/coin-sweper-logo.png";
+import AntalyaHayirlokmacisiImage from "../assets/image/AntalyaHayirlokmacisi.com.png";
 
 const projects = [
   {
@@ -50,6 +51,15 @@ const projects = [
     description:
       "Coin Sweeper, yukarıdan düşen paraları kutu ile topladığınız eğlenceli bir oyundur. Matter.js kullanılarak gerçekçi fizik hesaplamaları ile zorluk seviyeleri ayarlanmıştır. Hedefiniz, en yüksek skoru elde etmek için düşen paraları toplamak. Daha fazla bilgi ve oyuna erişmek için tıklayınız! Şimdilik 15.6 inc bilgisayar oyunu olarak tasarlanmıştır",
     path: "https://ahmetcankurt.github.io/coin-sweeper/", // URL olarak belirtildi
+  },
+  {
+    date: "https://antalyahayirlokmacisi.com/",
+    image: AntalyaHayirlokmacisiImage,
+    alt:  "Antalya Hayır Lokmacısı",
+    title: "Antalya Hayır Lokmacısı",
+    description:
+     "Antalya Hayır Lokmacısı, Antalya'da hayır işleri için lokma dağıtımı yapan bir sivil toplum kuruluşudur. Web sitesi, Antalya Hayır Lokmacısı'nın faaliyetlerini ve etkinliklerini tanıtmak için kullanılmaktadır. Web sitesi, Antalya Hayır Lokmacısı'nın faaliyetlerini ve etkinliklerini tanıtmak için kullanılmaktadır.",
+    path: "https://antalyahayirlokmacisi.com/", // URL olarak belirtildi
   }
   
 ];
@@ -69,7 +79,7 @@ function Projects() {
       </div>
 
       <div className="news-grid">
-        {projects.map((project, index) => (
+        {projects.reverse().map((project, index) => ( 
           <article
             key={index}
             className="news-item box"

@@ -13,6 +13,13 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/interaction-external-trail": "^3.7.1",
+    "@tsparticles/plugin-emitters": "^3.7.1",
+    "@tsparticles/updater-destroy": "^3.7.1",
+    "@tsparticles/updater-roll": "^3.7.1",
+    "@tsparticles/updater-tilt": "^3.7.1",
+    "@tsparticles/updater-twinkle": "^3.7.1",
+    "@tsparticles/updater-wobble": "^3.7.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.3.28",
@@ -25,7 +32,9 @@
     "react-progressbar.js": "^0.2.0",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
     "sass": "^1.77.8",
+    "tsparticles": "^3.7.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
